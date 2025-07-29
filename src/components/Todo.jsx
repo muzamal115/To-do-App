@@ -61,7 +61,8 @@ localStorage.setItem('todo',JSON.stringify(todolist))
       <div className='flex items-center  bg-gray-200 rounded-full h-14 my-7'>
         
         <input ref={inputRef} type="text" className='flex-1 pl-4 pr-2 outline-0 placeholder:text-slate-600'placeholder='Add your task' />
-        <button className='bg-orange-600 h-full rounded-full w-32 text-[18px] text-white font-semibold cursor-pointer' type='submit'>ADD + </button>
+        <button className='bg-orange-600 
+         h-full rounded-full  w-32 sm:px-0 text-[18px] text-white font-semibold cursor-pointer flex items-center justify-center gap-4' type='submit'>ADD <span className='hidden sm:block '>+</span> </button>
         
       </div>
       </form>
